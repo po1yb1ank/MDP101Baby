@@ -1,0 +1,982 @@
+###############################################################################
+#
+# IAR ELF Linker V7.50.2.10312/W32 for ARM                03/Mar/2018  05:27:22
+# Copyright 2007-2015 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\Exe\MDP101 Baby.out
+#    Map file     =  
+#        C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\List\MDP101 Baby.map
+#    Command line =  
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\Obj\adc.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\bootloader.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\Init.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\jsmn.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\keyboard.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\main.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\midi.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\midi_baby.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\midi_ble.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\mpu6050_ll_driver.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\mpu6050_ll_selt_test.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\queue.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\software_timer.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\startup_stm32f103xb.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal_adc.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal_adc_ex.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal_cortex.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal_crc.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal_dma.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal_flash.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal_flash_ex.o"
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal_gpio.o"
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal_gpio_ex.o"
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal_i2c.o"
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal_pcd.o"
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal_pcd_ex.o"
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal_pwr.o"
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal_rcc.o"
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal_rcc_ex.o"
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal_spi.o"
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal_tim.o"
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal_tim_ex.o"
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_hal_uart.o"
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_it.o"
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\Obj\stm32f1xx_ll_usb.o"
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\Obj\system_stm32f1xx.o"
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\Obj\task.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\tim.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\usb_device.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\usbd_conf.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\usbd_core.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\usbd_ctlreq.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\usbd_desc.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\usbd_ioreq.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\usbd_midi.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\usbd_midi_if.o" "C:\Users\Alexander
+#        Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101
+#        Baby\EWARM\MDP101 Baby\Obj\usr_led_blnk.o" --redirect
+#        _Printf=_PrintfTiny --redirect _Scanf=_ScanfSmallNoMb -o
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\Exe\MDP101 Baby.out" --map
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\MDP101 Baby\List\MDP101 Baby.map" --config
+#        "C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI
+#        Project\MDP101 Baby\EWARM\stm32f103xb_flash.icf" --entry
+#        __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0801ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20004fff] { rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                       0xec
+  .intvec            ro code  0x08000000    0xec  startup_stm32f103xb.o [1]
+                            - 0x080000ec    0xec
+
+"P1":                                     0x9190
+  .text              ro code  0x080000ec   0xd90  midi_baby.o [1]
+  .text              ro code  0x08000e7c    0x34  usb_device.o [1]
+  .text              ro code  0x08000eb0   0x150  midi_ble.o [1]
+  .text              ro code  0x08001000    0x36  bootloader.o [1]
+  .rodata            const    0x08001036     0x2  stm32f1xx_hal_rcc.o [1]
+  .text              ro code  0x08001038    0x70  usbd_midi_if.o [1]
+  .text              ro code  0x080010a8   0x244  software_timer.o [1]
+  .text              ro code  0x080012ec   0x330  stm32f1xx_hal_gpio.o [1]
+  .text              ro code  0x0800161c    0xc0  tim.o [1]
+  .text              ro code  0x080016dc   0x7be  stm32f1xx_hal_tim.o [1]
+  .text              ro code  0x08001e9c    0x7c  stm32f1xx_hal.o [1]
+  .text              ro code  0x08001f18   0x886  stm32f1xx_hal_adc.o [1]
+  .text              ro code  0x080027a0     0x6  ABImemclr4.o [5]
+  .text              ro code  0x080027a8   0x480  mpu6050_ll_driver.o [1]
+  .text              ro code  0x08002c28    0x32  I32ToFlt.o [4]
+  .text              ro code  0x08002c5c    0xfc  FltDiv.o [4]
+  .text              ro code  0x08002d58    0x44  FltToS32.o [4]
+  .text              ro code  0x08002d9c    0xd8  FltMul.o [4]
+  .text              ro code  0x08002e74    0x84  FltAdd.o [4]
+  .text              ro code  0x08002ef8    0xe6  FltSub.o [4]
+  .text              ro code  0x08002fe0    0x34  midi.o [1]
+  .text              ro code  0x08003014   0x318  usbd_core.o [1]
+  .text              ro code  0x0800332c   0x328  usbd_midi.o [1]
+  .text              ro code  0x08003654   0x704  stm32f1xx_hal_uart.o [1]
+  .text              ro code  0x08003d58   0x164  stm32f1xx_hal_cortex.o [1]
+  .text              ro code  0x08003ebc    0x26  stm32f1xx_hal_crc.o [1]
+  .text              ro code  0x08003ee4   0x5c4  main.o [1]
+  .text              ro code  0x080044a8     0x6  stm32f1xx_hal_tim_ex.o [1]
+  .text              ro code  0x080044b0   0x258  Init.o [1]
+  .text              ro code  0x08004708   0xa24  stm32f1xx_hal_rcc.o [1]
+  .text              ro code  0x0800512c   0x41a  stm32f1xx_hal_dma.o [1]
+  .text              ro code  0x08005548     0x2  stm32f1xx_hal_adc_ex.o [1]
+  .text              ro code  0x0800554c    0x32  ABImemset48.o [5]
+  .text              ro code  0x08005580   0xc28  stm32f1xx_hal_i2c.o [1]
+  .text              ro code  0x080061a8   0x130  queue.o [1]
+  .text              ro code  0x080062d8   0x4c4  usbd_conf.o [1]
+  .text              ro code  0x0800679c   0x666  usbd_ctlreq.o [1]
+  .text              ro code  0x08006e02    0xbc  usbd_ioreq.o [1]
+  .text              ro code  0x08006ec0    0x66  ABImemset.o [5]
+  .text              ro code  0x08006f28   0x1bc  adc.o [1]
+  .text              ro code  0x080070e4   0x3bc  task.o [1]
+  .text              ro code  0x080074a0    0xc4  usr_led_blnk.o [1]
+  .text              ro code  0x08007564   0x1d8  keyboard.o [1]
+  .text              ro code  0x0800773c   0x144  stm32f1xx_hal_rcc_ex.o [1]
+  .text              ro code  0x08007880   0x118  system_stm32f1xx.o [1]
+  .text              ro code  0x08007998    0x56  ABImemcpy_unaligned.o [5]
+  .text              ro code  0x080079ee   0x974  stm32f1xx_hal_pcd.o [1]
+  .text              ro code  0x08008362    0x46  stm32f1xx_hal_pcd_ex.o [1]
+  .text              ro code  0x080083a8   0xa44  stm32f1xx_ll_usb.o [1]
+  Initializer bytes  const    0x08008dec   0x104  <for P2-1>
+  .text              ro code  0x08008ef0    0xe0  usbd_desc.o [1]
+  .text              ro code  0x08008fd0    0x9c  stm32f1xx_it.o [1]
+  .text              ro code  0x0800906c    0x40  zero_init3.o [5]
+  .text              ro code  0x080090ac    0x2c  copy_init3.o [5]
+  .text              ro code  0x080090d8    0x28  data_init.o [5]
+  .iar.init_table    const    0x08009100    0x24  - Linker created -
+  .text              ro code  0x08009124    0x1a  cmain.o [5]
+  .text              ro code  0x0800913e     0x4  low_level_init.o [3]
+  .text              ro code  0x08009142     0x4  exit.o [3]
+  .text              ro code  0x08009148     0xa  cexit.o [5]
+  .text              ro code  0x08009154     0xc  XXexit.o [5]
+  .rodata            const    0x08009160    0x14  usbd_desc.o [1]
+  .rodata            const    0x08009174    0x10  stm32f1xx_hal_rcc.o [1]
+  .rodata            const    0x08009184    0x10  system_stm32f1xx.o [1]
+  .rodata            const    0x08009194    0x10  usbd_desc.o [1]
+  .rodata            const    0x080091a4    0x10  usbd_desc.o [1]
+  .text              ro code  0x080091b4    0x10  startup_stm32f103xb.o [1]
+  .rodata            const    0x080091c4     0xc  usbd_desc.o [1]
+  .rodata            const    0x080091d0     0xc  usbd_desc.o [1]
+  .text              ro code  0x080091dc     0xc  cstartup_M.o [5]
+  .rodata            const    0x080091e8     0x8  system_stm32f1xx.o [1]
+  .text              ro code  0x080091f0     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x080091f4     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x080091f8     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x080091fc     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009200     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009204     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009208     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x0800920c     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009210     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009214     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009218     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x0800921c     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009220     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009224     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009228     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x0800922c     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009230     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009234     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009238     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x0800923c     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009240     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009244     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009248     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x0800924c     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009250     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009254     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009258     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x0800925c     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009260     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009264     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009268     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x0800926c     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009270     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009274     0x4  startup_stm32f103xb.o [1]
+  .text              ro code  0x08009278     0x4  startup_stm32f103xb.o [1]
+  .rodata            const    0x0800927c     0x0  zero_init3.o [5]
+  .rodata            const    0x0800927c     0x0  copy_init3.o [5]
+                            - 0x0800927c  0x9190
+
+"P2", part 1 of 3:                         0x104
+  P2-1                        0x20000000   0x101  <Init block>
+    .data            inited   0x20000000     0x4  system_stm32f1xx.o [1]
+    .data            inited   0x20000004    0x1c  usbd_desc.o [1]
+    .data            inited   0x20000020    0x14  usbd_desc.o [1]
+    .data            inited   0x20000034     0x4  usbd_desc.o [1]
+    .data            inited   0x20000038     0xc  usbd_midi.o [1]
+    .data            inited   0x20000044    0x3c  usbd_midi.o [1]
+    .data            inited   0x20000080    0x68  usbd_midi.o [1]
+    .data            inited   0x200000e8    0x10  usbd_midi_if.o [1]
+    .data            inited   0x200000f8     0x2  usr_led_blnk.o [1]
+    .data            inited   0x200000fa     0x2  usr_led_blnk.o [1]
+    .data            inited   0x200000fc     0x2  usr_led_blnk.o [1]
+    .data            inited   0x200000fe     0x1  keyboard.o [1]
+    .data            inited   0x200000ff     0x1  main.o [1]
+    .data            inited   0x20000100     0x1  midi_baby.o [1]
+                            - 0x20000101   0x101
+
+"P2", part 2 of 3:                         0x400
+  CSTACK                      0x20000108   0x400  <Block>
+    CSTACK           uninit   0x20000108   0x400  <Block tail>
+                            - 0x20000508   0x400
+
+"P2", part 3 of 3:                        0x1a78
+  .bss               zero     0x20000508   0xbc0  main.o [1]
+  .bss               zero     0x200010c8   0x420  usbd_conf.o [1]
+  .bss               zero     0x200014e8   0x2a0  software_timer.o [1]
+  .bss               zero     0x20001788   0x224  usb_device.o [1]
+  .bss               zero     0x200019ac   0x200  usbd_desc.o [1]
+  .bss               zero     0x20001bac    0xa4  usbd_conf.o [1]
+  .bss               zero     0x20001c50    0x40  midi_ble.o [1]
+  .bss               zero     0x20001c90    0x40  usbd_midi_if.o [1]
+  .bss               zero     0x20001cd0    0x40  usbd_midi_if.o [1]
+  .bss               zero     0x20001d10    0x3c  main.o [1]
+  .bss               zero     0x20001d4c    0x3c  mpu6050_ll_driver.o [1]
+  .bss               zero     0x20001d88    0x3c  tim.o [1]
+  .bss               zero     0x20001dc4    0x38  adc.o [1]
+  .bss               zero     0x20001dfc    0x38  mpu6050_ll_driver.o [1]
+  .bss               zero     0x20001e34    0x38  mpu6050_ll_driver.o [1]
+  .bss               zero     0x20001e6c    0x30  adc.o [1]
+  .bss               zero     0x20001e9c    0x30  adc.o [1]
+  .bss               zero     0x20001ecc    0x18  software_timer.o [1]
+  .bss               zero     0x20001ee4    0x18  software_timer.o [1]
+  .bss               zero     0x20001efc    0x14  keyboard.o [1]
+  .bss               zero     0x20001f10    0x10  midi_baby.o [1]
+  .bss               zero     0x20001f20     0x8  bootloader.o [1]
+  .bss               zero     0x20001f28     0x8  midi_baby.o [1]
+  .bss               zero     0x20001f30     0x8  midi_baby.o [1]
+  .bss               zero     0x20001f38     0x4  keyboard.o [1]
+  .bss               zero     0x20001f3c     0x4  main.o [1]
+  .bss               zero     0x20001f40     0x4  main.o [1]
+  .bss               zero     0x20001f44     0x4  main.o [1]
+  .bss               zero     0x20001f48     0x4  midi_baby.o [1]
+  .bss               zero     0x20001f4c     0x4  midi_baby.o [1]
+  .bss               zero     0x20001f50     0x4  midi_baby.o [1]
+  .bss               zero     0x20001f54     0x4  midi_baby.o [1]
+  .bss               zero     0x20001f58     0x4  midi_baby.o [1]
+  .bss               zero     0x20001f5c     0x4  midi_baby.o [1]
+  .bss               zero     0x20001f60     0x4  stm32f1xx_hal.o [1]
+  .bss               zero     0x20001f64     0x4  task.o [1]
+  .bss               zero     0x20001f68     0x4  usr_led_blnk.o [1]
+  .bss               zero     0x20001f6c     0x2  main.o [1]
+  .bss               zero     0x20001f6e     0x2  main.o [1]
+  .bss               zero     0x20001f70     0x2  main.o [1]
+  .bss               zero     0x20001f72     0x2  midi_ble.o [1]
+  .bss               zero     0x20001f74     0x2  mpu6050_ll_driver.o [1]
+  .bss               zero     0x20001f76     0x2  mpu6050_ll_driver.o [1]
+  .bss               zero     0x20001f78     0x1  midi_baby.o [1]
+  .bss               zero     0x20001f79     0x1  midi_baby.o [1]
+  .bss               zero     0x20001f7a     0x1  midi_ble.o [1]
+  .bss               zero     0x20001f7b     0x1  task.o [1]
+  .bss               zero     0x20001f7c     0x1  task.o [1]
+  .bss               zero     0x20001f7d     0x1  task.o [1]
+  .bss               zero     0x20001f7e     0x1  task.o [1]
+  .bss               zero     0x20001f7f     0x1  usbd_ctlreq.o [1]
+                            - 0x20001f80  0x1a78
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x1a78:
+          0x20000508  0x1a78
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x104 (101% of destination):
+          0x08008dec   0x104
+    1 destination range, total size 0x101:
+          0x20000000   0x101
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101 Baby\EWARM\MDP101 Baby\Obj: [1]
+    Init.o                      600
+    adc.o                       444               152
+    bootloader.o                 54                 8
+    keyboard.o                  472        1       25
+    main.o                    1 476        1    3 087
+    midi.o                       52
+    midi_baby.o               3 472        1       59
+    midi_ble.o                  336                67
+    mpu6050_ll_driver.o       1 152               176
+    queue.o                     304
+    software_timer.o            580               720
+    startup_stm32f103xb.o       392
+    stm32f1xx_hal.o             124                 4
+    stm32f1xx_hal_adc.o       2 182
+    stm32f1xx_hal_adc_ex.o        2
+    stm32f1xx_hal_cortex.o      356
+    stm32f1xx_hal_crc.o          38
+    stm32f1xx_hal_dma.o       1 050
+    stm32f1xx_hal_gpio.o        816
+    stm32f1xx_hal_i2c.o       3 112
+    stm32f1xx_hal_pcd.o       2 420
+    stm32f1xx_hal_pcd_ex.o       70
+    stm32f1xx_hal_rcc.o       2 596       18
+    stm32f1xx_hal_rcc_ex.o      324
+    stm32f1xx_hal_tim.o       1 982
+    stm32f1xx_hal_tim_ex.o        6
+    stm32f1xx_hal_uart.o      1 796
+    stm32f1xx_it.o              156
+    stm32f1xx_ll_usb.o        2 628
+    system_stm32f1xx.o          280       28        4
+    task.o                      956                 8
+    tim.o                       192                60
+    usb_device.o                 52               548
+    usbd_conf.o               1 220             1 220
+    usbd_core.o                 792
+    usbd_ctlreq.o             1 638                 1
+    usbd_desc.o                 224      128      564
+    usbd_ioreq.o                188
+    usbd_midi.o                 808      176      176
+    usbd_midi_if.o              112       16      144
+    usr_led_blnk.o              196        6       10
+    -------------------------------------------------
+    Total:                   35 650      375    7 033
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                        4
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                        8
+
+m7M_tl.a: [4]
+    FltAdd.o                    132
+    FltDiv.o                    252
+    FltMul.o                    216
+    FltSub.o                    230
+    FltToS32.o                   68
+    I32ToFlt.o                   50
+    -------------------------------------------------
+    Total:                      948
+
+rt7M_tl.a: [5]
+    ABImemclr4.o                  6
+    ABImemcpy_unaligned.o        86
+    ABImemset.o                 102
+    ABImemset48.o                50
+    XXexit.o                     12
+    cexit.o                      10
+    cmain.o                      26
+    copy_init3.o                 44
+    cstartup_M.o                 12
+    data_init.o                  40
+    zero_init3.o                 64
+    -------------------------------------------------
+    Total:                      452
+
+    Gaps                         28
+    Linker created                        39    1 024
+-----------------------------------------------------
+    Grand Total:             37 086      414    8 057
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x08009100          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x08009124          --   Gb  - Linker created -
+?main                   0x08009125         Code  Gb  cmain.o [5]
+ADC1_2_IRQHandler       0x0800900d    0xa  Code  Gb  stm32f1xx_it.o [1]
+ADC_ConversionStop_Disable
+                        0x080026d1   0x4a  Code  Gb  stm32f1xx_hal_adc.o [1]
+ADC_DMAConvCplt         0x0800271d   0x52  Code  Gb  stm32f1xx_hal_adc.o [1]
+ADC_DMAError            0x08002781   0x1e  Code  Gb  stm32f1xx_hal_adc.o [1]
+ADC_DMAHalfConvCplt     0x08002771    0xe  Code  Gb  stm32f1xx_hal_adc.o [1]
+ADC_Enable              0x0800263f   0x6e  Code  Gb  stm32f1xx_hal_adc.o [1]
+AHBPrescTable           0x08009184   0x10  Data  Gb  system_stm32f1xx.o [1]
+APBPrescTable           0x080091e8    0x8  Data  Gb  system_stm32f1xx.o [1]
+BusFault_Handler        0x08008fe3    0x2  Code  Gb  stm32f1xx_it.o [1]
+CSTACK$$Base            0x20000108          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000508          --   Gb  - Linker created -
+DMA1_Channel1_IRQHandler
+                        0x08009003    0xa  Code  Gb  stm32f1xx_it.o [1]
+DMA1_Channel6_IRQHandler
+                        0x08009017    0xa  Code  Gb  stm32f1xx_it.o [1]
+DMA1_Channel7_IRQHandler
+                        0x08009021    0xa  Code  Gb  stm32f1xx_it.o [1]
+DMA_SetConfig           0x08005525   0x22  Code  Lc  stm32f1xx_hal_dma.o [1]
+DebugMon_Handler        0x08008fe9    0x2  Code  Gb  stm32f1xx_it.o [1]
+FS_Desc                 0x20000004   0x1c  Data  Gb  usbd_desc.o [1]
+GPIO_init               0x08004535  0x138  Code  Gb  Init.o [1]
+HAL_ADCEx_InjectedConvCpltCallback
+                        0x08005549    0x2  Code  Wk  stm32f1xx_hal_adc_ex.o [1]
+HAL_ADC_ConfigChannel   0x080024a7  0x198  Code  Gb  stm32f1xx_hal_adc.o [1]
+HAL_ADC_ConvCpltCallback
+                        0x080040df   0x42  Code  Gb  main.o [1]
+HAL_ADC_ConvHalfCpltCallback
+                        0x080024a1    0x2  Code  Wk  stm32f1xx_hal_adc.o [1]
+HAL_ADC_ErrorCallback   0x080024a5    0x2  Code  Wk  stm32f1xx_hal_adc.o [1]
+HAL_ADC_GetValue        0x08002395    0x6  Code  Gb  stm32f1xx_hal_adc.o [1]
+HAL_ADC_IRQHandler      0x0800239b  0x106  Code  Gb  stm32f1xx_hal_adc.o [1]
+HAL_ADC_Init            0x08001f19  0x16e  Code  Gb  stm32f1xx_hal_adc.o [1]
+HAL_ADC_LevelOutOfWindowCallback
+                        0x080024a3    0x2  Code  Wk  stm32f1xx_hal_adc.o [1]
+HAL_ADC_MspInit         0x08002087    0x2  Code  Wk  stm32f1xx_hal_adc.o [1]
+HAL_ADC_Start_DMA       0x080021c3  0x170  Code  Gb  stm32f1xx_hal_adc.o [1]
+HAL_ADC_Start_IT        0x08002089  0x13a  Code  Gb  stm32f1xx_hal_adc.o [1]
+HAL_ADC_Stop_DMA        0x08002333   0x62  Code  Gb  stm32f1xx_hal_adc.o [1]
+HAL_CRC_Init            0x08003ebd   0x24  Code  Gb  stm32f1xx_hal_crc.o [1]
+HAL_CRC_MspInit         0x08003ee1    0x2  Code  Wk  stm32f1xx_hal_crc.o [1]
+HAL_DMA_Abort           0x080051f3   0x54  Code  Gb  stm32f1xx_hal_dma.o [1]
+HAL_DMA_IRQHandler      0x08005247  0x2bc  Code  Gb  stm32f1xx_hal_dma.o [1]
+HAL_DMA_Init            0x0800512d   0x58  Code  Gb  stm32f1xx_hal_dma.o [1]
+HAL_DMA_Start_IT        0x08005185   0x6e  Code  Gb  stm32f1xx_hal_dma.o [1]
+HAL_Delay               0x08001ef5   0x1a  Code  Wk  stm32f1xx_hal.o [1]
+HAL_GPIO_Init           0x080012ed  0x2ba  Code  Gb  stm32f1xx_hal_gpio.o [1]
+HAL_GPIO_ReadPin        0x080015a7   0x18  Code  Gb  stm32f1xx_hal_gpio.o [1]
+HAL_GPIO_TogglePin      0x080015d3    0xa  Code  Gb  stm32f1xx_hal_gpio.o [1]
+HAL_GPIO_WritePin       0x080015bf   0x14  Code  Gb  stm32f1xx_hal_gpio.o [1]
+HAL_GetTick             0x08001eef    0x6  Code  Wk  stm32f1xx_hal.o [1]
+HAL_I2C_ER_IRQHandler   0x08005ae1  0x13e  Code  Gb  stm32f1xx_hal_i2c.o [1]
+HAL_I2C_ErrorCallback   0x08005c21    0x2  Code  Wk  stm32f1xx_hal_i2c.o [1]
+HAL_I2C_Init            0x08005581   0xb8  Code  Gb  stm32f1xx_hal_i2c.o [1]
+HAL_I2C_MasterRxCpltCallback
+                        0x08004121   0x1c  Code  Gb  main.o [1]
+HAL_I2C_Master_Receive  0x08005779  0x252  Code  Gb  stm32f1xx_hal_i2c.o [1]
+HAL_I2C_Master_Receive_DMA
+                        0x080059cb   0xfe  Code  Gb  stm32f1xx_hal_i2c.o [1]
+HAL_I2C_Master_Transmit
+                        0x08005639  0x140  Code  Gb  stm32f1xx_hal_i2c.o [1]
+HAL_I2C_MspInit         0x08002925   0x80  Code  Gb  mpu6050_ll_driver.o [1]
+HAL_I2C_SlaveTxCpltCallback
+                        0x08005c1f    0x2  Code  Wk  stm32f1xx_hal_i2c.o [1]
+HAL_IncTick             0x08001ee3    0xc  Code  Wk  stm32f1xx_hal.o [1]
+HAL_Init                0x08001e9d   0x22  Code  Gb  stm32f1xx_hal.o [1]
+HAL_InitTick            0x08001ebf   0x24  Code  Wk  stm32f1xx_hal.o [1]
+HAL_MspInit             0x0800466d   0x86  Code  Gb  Init.o [1]
+HAL_NVIC_EnableIRQ      0x08003e5b    0xe  Code  Gb  stm32f1xx_hal_cortex.o [1]
+HAL_NVIC_SetPriority    0x08003e35   0x26  Code  Gb  stm32f1xx_hal_cortex.o [1]
+HAL_NVIC_SetPriorityGrouping
+                        0x08003e29    0xc  Code  Gb  stm32f1xx_hal_cortex.o [1]
+HAL_PCDEx_PMAConfig     0x08008363   0x46  Code  Gb  stm32f1xx_hal_pcd_ex.o [1]
+HAL_PCDEx_SetConnectionState
+                        0x08006787   0x16  Code  Gb  usbd_conf.o [1]
+HAL_PCD_DataInStageCallback
+                        0x08006349   0x1c  Code  Gb  usbd_conf.o [1]
+HAL_PCD_DataOutStageCallback
+                        0x0800632b   0x1e  Code  Gb  usbd_conf.o [1]
+HAL_PCD_EP_Close        0x08007d1f   0x60  Code  Gb  stm32f1xx_hal_pcd.o [1]
+HAL_PCD_EP_ClrStall     0x08007ee3   0x60  Code  Gb  stm32f1xx_hal_pcd.o [1]
+HAL_PCD_EP_GetRxCount   0x08007df1   0x12  Code  Gb  stm32f1xx_hal_pcd.o [1]
+HAL_PCD_EP_Open         0x08007ca1   0x7e  Code  Gb  stm32f1xx_hal_pcd.o [1]
+HAL_PCD_EP_Receive      0x08007d7f   0x72  Code  Gb  stm32f1xx_hal_pcd.o [1]
+HAL_PCD_EP_SetStall     0x08007e73   0x70  Code  Gb  stm32f1xx_hal_pcd.o [1]
+HAL_PCD_EP_Transmit     0x08007e03   0x70  Code  Gb  stm32f1xx_hal_pcd.o [1]
+HAL_PCD_IRQHandler      0x08007b2d  0x144  Code  Gb  stm32f1xx_hal_pcd.o [1]
+HAL_PCD_Init            0x080079ef  0x10a  Code  Gb  stm32f1xx_hal_pcd.o [1]
+HAL_PCD_MspInit         0x080062d9   0x40  Code  Gb  usbd_conf.o [1]
+HAL_PCD_ResetCallback   0x08006373   0x2c  Code  Gb  usbd_conf.o [1]
+HAL_PCD_ResumeCallback  0x080063c3    0xe  Code  Gb  usbd_conf.o [1]
+HAL_PCD_SOFCallback     0x08006365    0xe  Code  Gb  usbd_conf.o [1]
+HAL_PCD_SetAddress      0x08007c71   0x30  Code  Gb  stm32f1xx_hal_pcd.o [1]
+HAL_PCD_SetupStageCallback
+                        0x08006319   0x12  Code  Gb  usbd_conf.o [1]
+HAL_PCD_Start           0x08007af9   0x34  Code  Gb  stm32f1xx_hal_pcd.o [1]
+HAL_PCD_SuspendCallback
+                        0x0800639f   0x24  Code  Gb  usbd_conf.o [1]
+HAL_RCCEx_PeriphCLKConfig
+                        0x0800773d  0x12c  Code  Gb  stm32f1xx_hal_rcc_ex.o [1]
+HAL_RCC_ClockConfig     0x08004df1  0x228  Code  Gb  stm32f1xx_hal_rcc.o [1]
+HAL_RCC_GetHCLKFreq     0x080050a3    0x6  Code  Gb  stm32f1xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK1Freq    0x080050a9   0x20  Code  Gb  stm32f1xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK2Freq    0x080050c9   0x20  Code  Gb  stm32f1xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq
+                        0x08005019   0x8a  Code  Gb  stm32f1xx_hal_rcc.o [1]
+HAL_RCC_OscConfig       0x08004709  0x6e8  Code  Gb  stm32f1xx_hal_rcc.o [1]
+HAL_SYSTICK_CLKSourceConfig
+                        0x08003e75   0x20  Code  Gb  stm32f1xx_hal_cortex.o [1]
+HAL_SYSTICK_Callback    0x080040cd   0x12  Code  Gb  main.o [1]
+HAL_SYSTICK_Config      0x08003e69    0xc  Code  Gb  stm32f1xx_hal_cortex.o [1]
+HAL_SYSTICK_IRQHandler  0x08003eb5    0x8  Code  Gb  stm32f1xx_hal_cortex.o [1]
+HAL_TIMEx_BreakCallback
+                        0x080044ab    0x2  Code  Wk  stm32f1xx_hal_tim_ex.o [1]
+HAL_TIMEx_CommutationCallback
+                        0x080044a9    0x2  Code  Wk  stm32f1xx_hal_tim_ex.o [1]
+HAL_TIM_ConfigClockSource
+                        0x08001ac7  0x11e  Code  Gb  stm32f1xx_hal_tim.o [1]
+HAL_TIM_IC_CaptureCallback
+                        0x08001be9    0x2  Code  Wk  stm32f1xx_hal_tim.o [1]
+HAL_TIM_IRQHandler      0x08001851  0x176  Code  Gb  stm32f1xx_hal_tim.o [1]
+HAL_TIM_MspPostInit     0x080016ab   0x22  Code  Lc  tim.o [1]
+HAL_TIM_OC_DelayElapsedCallback
+                        0x08001be7    0x2  Code  Wk  stm32f1xx_hal_tim.o [1]
+HAL_TIM_PWM_ConfigChannel
+                        0x080019c7  0x100  Code  Gb  stm32f1xx_hal_tim.o [1]
+HAL_TIM_PWM_Init        0x080016dd   0x38  Code  Gb  stm32f1xx_hal_tim.o [1]
+HAL_TIM_PWM_MspInit     0x08001715    0x2  Code  Wk  stm32f1xx_hal_tim.o [1]
+HAL_TIM_PWM_PulseFinishedCallback
+                        0x08004151   0xe2  Code  Gb  main.o [1]
+HAL_TIM_PWM_Start_IT    0x08001717   0x82  Code  Gb  stm32f1xx_hal_tim.o [1]
+HAL_TIM_PWM_Stop_IT     0x08001799   0xb2  Code  Gb  stm32f1xx_hal_tim.o [1]
+HAL_TIM_PeriodElapsedCallback
+                        0x08001be5    0x2  Code  Wk  stm32f1xx_hal_tim.o [1]
+HAL_TIM_TriggerCallback
+                        0x08001beb    0x2  Code  Wk  stm32f1xx_hal_tim.o [1]
+HAL_UART_ErrorCallback  0x08003965    0x2  Code  Wk  stm32f1xx_hal_uart.o [1]
+HAL_UART_IRQHandler     0x08003849  0x11a  Code  Gb  stm32f1xx_hal_uart.o [1]
+HAL_UART_Init           0x08003655   0x70  Code  Gb  stm32f1xx_hal_uart.o [1]
+HAL_UART_MspInit        0x08000f13   0x6a  Code  Gb  midi_ble.o [1]
+HAL_UART_Receive_IT     0x080037c1   0x88  Code  Gb  stm32f1xx_hal_uart.o [1]
+HAL_UART_RxCpltCallback
+                        0x0800413d   0x14  Code  Gb  main.o [1]
+HAL_UART_Transmit       0x080036c5   0xfc  Code  Gb  stm32f1xx_hal_uart.o [1]
+HAL_UART_TxCpltCallback
+                        0x08003963    0x2  Code  Wk  stm32f1xx_hal_uart.o [1]
+HardFault_Handler       0x08008fd3    0xe  Code  Gb  stm32f1xx_it.o [1]
+I2C1_ER_IRQHandler      0x0800903f    0xa  Code  Gb  stm32f1xx_it.o [1]
+I2C_Configure_Speed     0x08005e53   0x60  Code  Lc  stm32f1xx_hal_i2c.o [1]
+I2C_DMAError            0x08005ec1   0x32  Code  Lc  stm32f1xx_hal_i2c.o [1]
+I2C_DMAMasterReceiveCplt
+                        0x08005df7   0x5c  Code  Lc  stm32f1xx_hal_i2c.o [1]
+I2C_IsAcknowledgeFailed
+                        0x0800617b   0x2e  Code  Lc  stm32f1xx_hal_i2c.o [1]
+I2C_MasterRequestRead   0x08005cf1  0x106  Code  Lc  stm32f1xx_hal_i2c.o [1]
+I2C_MasterRequestWrite  0x08005c5b   0x96  Code  Lc  stm32f1xx_hal_i2c.o [1]
+I2C_Slave_AF            0x08005c23   0x38  Code  Lc  stm32f1xx_hal_i2c.o [1]
+I2C_WaitOnBTFFlagUntilTimeout
+                        0x080060c1   0x52  Code  Lc  stm32f1xx_hal_i2c.o [1]
+I2C_WaitOnFlagUntilTimeout
+                        0x08005ef3   0xda  Code  Lc  stm32f1xx_hal_i2c.o [1]
+I2C_WaitOnMasterAddressFlagUntilTimeout
+                        0x08005fcd   0xa2  Code  Lc  stm32f1xx_hal_i2c.o [1]
+I2C_WaitOnRXNEFlagUntilTimeout
+                        0x08006113   0x68  Code  Lc  stm32f1xx_hal_i2c.o [1]
+I2C_WaitOnTXEFlagUntilTimeout
+                        0x0800606f   0x52  Code  Lc  stm32f1xx_hal_i2c.o [1]
+MIDI_Control_FS         0x08001055    0x6  Code  Lc  usbd_midi_if.o [1]
+MIDI_DeInit_FS          0x08001051    0x4  Code  Lc  usbd_midi_if.o [1]
+MIDI_Init_FS            0x08001039   0x18  Code  Lc  usbd_midi_if.o [1]
+MIDI_REQ_GetCurrent     0x080035ed   0x32  Code  Lc  usbd_midi.o [1]
+MIDI_REQ_SetCurrent     0x0800361f   0x36  Code  Lc  usbd_midi.o [1]
+MIDI_Receive_FS         0x0800105b   0x10  Code  Lc  usbd_midi_if.o [1]
+MIDI_Transmit_FS        0x0800106b   0x32  Code  Gb  usbd_midi_if.o [1]
+MemManage_Handler       0x08008fe1    0x2  Code  Gb  stm32f1xx_it.o [1]
+NMI_Handler             0x08008fd1    0x2  Code  Gb  stm32f1xx_it.o [1]
+NVIC_EnableIRQ          0x08003d81   0x14  Code  Lc  stm32f1xx_hal_cortex.o [1]
+NVIC_EncodePriority     0x08003dbb   0x3e  Code  Lc  stm32f1xx_hal_cortex.o [1]
+NVIC_GetPriorityGrouping
+                        0x08003d77    0xa  Code  Lc  stm32f1xx_hal_cortex.o [1]
+NVIC_SetPriority        0x08003d95   0x26  Code  Lc  stm32f1xx_hal_cortex.o [1]
+NVIC_SetPriorityGrouping
+                        0x08003d59   0x1e  Code  Lc  stm32f1xx_hal_cortex.o [1]
+PCD_EP_ISR_Handler      0x08007f43  0x420  Code  Lc  stm32f1xx_hal_pcd.o [1]
+PendSV_Handler          0x08008feb    0x2  Code  Gb  stm32f1xx_it.o [1]
+Region$$Table$$Base     0x08009100          --   Gb  - Linker created -
+Region$$Table$$Limit    0x08009124          --   Gb  - Linker created -
+SVC_Handler             0x08008fe7    0x2  Code  Gb  stm32f1xx_it.o [1]
+SysTick_Config          0x08003df9   0x30  Code  Lc  stm32f1xx_hal_cortex.o [1]
+SysTick_Handler         0x08008fed    0xc  Code  Gb  stm32f1xx_it.o [1]
+SystemClock_Config      0x080044b1   0x84  Code  Gb  Init.o [1]
+SystemCoreClock         0x20000000    0x4  Data  Gb  system_stm32f1xx.o [1]
+SystemCoreClockUpdate   0x080078cf   0x9c  Code  Gb  system_stm32f1xx.o [1]
+SystemInit              0x08007881   0x4e  Code  Gb  system_stm32f1xx.o [1]
+TIM4_IRQHandler         0x08009035    0xa  Code  Gb  stm32f1xx_it.o [1]
+TIM_Base_SetConfig      0x08001bed   0x60  Code  Gb  stm32f1xx_hal_tim.o [1]
+TIM_CCxChannelCmd       0x08001e7d   0x1e  Code  Gb  stm32f1xx_hal_tim.o [1]
+TIM_ETR_SetConfig       0x08001e61   0x1c  Code  Lc  stm32f1xx_hal_tim.o [1]
+TIM_ITRx_SetConfig      0x08001e4b   0x16  Code  Lc  stm32f1xx_hal_tim.o [1]
+TIM_OC1_SetConfig       0x08001c4d   0x66  Code  Lc  stm32f1xx_hal_tim.o [1]
+TIM_OC2_SetConfig       0x08001cb3   0x70  Code  Gb  stm32f1xx_hal_tim.o [1]
+TIM_OC3_SetConfig       0x08001d23   0x6e  Code  Lc  stm32f1xx_hal_tim.o [1]
+TIM_OC4_SetConfig       0x08001d91   0x52  Code  Lc  stm32f1xx_hal_tim.o [1]
+TIM_TI1_ConfigInputStage
+                        0x08001df1   0x2c  Code  Lc  stm32f1xx_hal_tim.o [1]
+TIM_TI2_ConfigInputStage
+                        0x08001e1d   0x2e  Code  Lc  stm32f1xx_hal_tim.o [1]
+UART_EndTransmit_IT     0x08003ac3   0x30  Code  Lc  stm32f1xx_hal_uart.o [1]
+UART_Receive_IT         0x08003af3   0xc4  Code  Lc  stm32f1xx_hal_uart.o [1]
+UART_SetConfig          0x08003bb7  0x198  Code  Lc  stm32f1xx_hal_uart.o [1]
+UART_Transmit_IT        0x08003a49   0x7a  Code  Lc  stm32f1xx_hal_uart.o [1]
+UART_WaitOnFlagUntilTimeout
+                        0x08003967   0xe2  Code  Lc  stm32f1xx_hal_uart.o [1]
+USART3_IRQHandler       0x0800902b    0xa  Code  Gb  stm32f1xx_it.o [1]
+USBD_ClrClassConfig     0x080030a7   0x18  Code  Gb  usbd_core.o [1]
+USBD_ClrFeature         0x08006d2f   0x3a  Code  Lc  usbd_ctlreq.o [1]
+USBD_CtlContinueRx      0x08006e71   0x1a  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlContinueSendData
+                        0x08006e2b   0x1a  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlError           0x08006d91   0x18  Code  Gb  usbd_ctlreq.o [1]
+USBD_CtlPrepareRx       0x08006e45   0x2c  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlReceiveStatus   0x08006ea5   0x1a  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlSendData        0x08006e03   0x28  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlSendStatus      0x08006e8b   0x1a  Code  Gb  usbd_ioreq.o [1]
+USBD_FS_ConfigStrDescriptor
+                        0x08008f65   0x26  Code  Gb  usbd_desc.o [1]
+USBD_FS_DeviceDesc      0x20000020   0x14  Data  Gb  usbd_desc.o [1]
+USBD_FS_DeviceDescriptor
+                        0x08008ef1    0xa  Code  Gb  usbd_desc.o [1]
+USBD_FS_InterfaceStrDescriptor
+                        0x08008f8b   0x26  Code  Gb  usbd_desc.o [1]
+USBD_FS_LangIDStrDescriptor
+                        0x08008efb    0xa  Code  Gb  usbd_desc.o [1]
+USBD_FS_ManufacturerStrDescriptor
+                        0x08008f2b   0x14  Code  Gb  usbd_desc.o [1]
+USBD_FS_ProductStrDescriptor
+                        0x08008f05   0x26  Code  Gb  usbd_desc.o [1]
+USBD_FS_SerialStrDescriptor
+                        0x08008f3f   0x26  Code  Gb  usbd_desc.o [1]
+USBD_GetConfig          0x08006c81   0x4c  Code  Lc  usbd_ctlreq.o [1]
+USBD_GetDescriptor      0x080069d5  0x16c  Code  Lc  usbd_ctlreq.o [1]
+USBD_GetLen             0x08006def   0x14  Code  Lc  usbd_ctlreq.o [1]
+USBD_GetStatus          0x08006ccd   0x3c  Code  Lc  usbd_ctlreq.o [1]
+USBD_GetString          0x08006da9   0x46  Code  Gb  usbd_ctlreq.o [1]
+USBD_Init               0x08003015   0x38  Code  Gb  usbd_core.o [1]
+USBD_Interface_fops_FS  0x200000e8   0x10  Data  Gb  usbd_midi_if.o [1]
+USBD_LL_ClearStallEP    0x080065c3   0x4c  Code  Gb  usbd_conf.o [1]
+USBD_LL_CloseEP         0x0800652b   0x4c  Code  Gb  usbd_conf.o [1]
+USBD_LL_DataInStage     0x080031b7   0xe2  Code  Gb  usbd_core.o [1]
+USBD_LL_DataOutStage    0x08003129   0x8e  Code  Gb  usbd_core.o [1]
+USBD_LL_GetRxDataSize   0x08006753   0x14  Code  Gb  usbd_conf.o [1]
+USBD_LL_Init            0x080063d1   0xac  Code  Gb  usbd_conf.o [1]
+USBD_LL_IsStallEP       0x0800660f   0x2c  Code  Gb  usbd_conf.o [1]
+USBD_LL_OpenEP          0x080064c3   0x68  Code  Gb  usbd_conf.o [1]
+USBD_LL_PrepareReceive  0x080066ed   0x66  Code  Gb  usbd_conf.o [1]
+USBD_LL_Reset           0x08003299   0x46  Code  Gb  usbd_core.o [1]
+USBD_LL_Resume          0x080032fb    0xe  Code  Gb  usbd_core.o [1]
+USBD_LL_SOF             0x08003309   0x24  Code  Gb  usbd_core.o [1]
+USBD_LL_SetSpeed        0x080032df    0x8  Code  Gb  usbd_core.o [1]
+USBD_LL_SetUSBAddress   0x0800663b   0x4c  Code  Gb  usbd_conf.o [1]
+USBD_LL_SetupStage      0x080030bf   0x6a  Code  Gb  usbd_core.o [1]
+USBD_LL_StallEP         0x08006577   0x4c  Code  Gb  usbd_conf.o [1]
+USBD_LL_Start           0x0800647d   0x46  Code  Gb  usbd_conf.o [1]
+USBD_LL_Suspend         0x080032e7   0x14  Code  Gb  usbd_core.o [1]
+USBD_LL_Transmit        0x08006687   0x66  Code  Gb  usbd_conf.o [1]
+USBD_LangIDDesc         0x20000034    0x4  Data  Gb  usbd_desc.o [1]
+USBD_MIDI               0x20000044   0x3c  Data  Gb  usbd_midi.o [1]
+USBD_MIDI_CfgDesc       0x20000080   0x68  Data  Gb  usbd_midi.o [1]
+USBD_MIDI_DataIn        0x08003491   0x1a  Code  Lc  usbd_midi.o [1]
+USBD_MIDI_DataOut       0x080034ab   0x46  Code  Lc  usbd_midi.o [1]
+USBD_MIDI_DeInit        0x08003393   0x3c  Code  Lc  usbd_midi.o [1]
+USBD_MIDI_DeviceQualifierDesc
+                        0x20000038    0xc  Data  Lc  usbd_midi.o [1]
+USBD_MIDI_EP0_RxReady   0x08003509   0x36  Code  Lc  usbd_midi.o [1]
+USBD_MIDI_EP0_TxReady   0x08003503    0x6  Code  Lc  usbd_midi.o [1]
+USBD_MIDI_GetCfgDesc    0x0800353f    0xa  Code  Lc  usbd_midi.o [1]
+USBD_MIDI_GetDeviceQualifierDescriptor
+                        0x08003549    0xa  Code  Gb  usbd_midi.o [1]
+USBD_MIDI_Init          0x0800332d   0x66  Code  Lc  usbd_midi.o [1]
+USBD_MIDI_IsoINIncomplete
+                        0x080034f7    0x6  Code  Lc  usbd_midi.o [1]
+USBD_MIDI_IsoOUTIncomplete
+                        0x080034fd    0x6  Code  Lc  usbd_midi.o [1]
+USBD_MIDI_ReceivePacket
+                        0x080035c9   0x24  Code  Gb  usbd_midi.o [1]
+USBD_MIDI_RegisterInterface
+                        0x08003561   0x14  Code  Gb  usbd_midi.o [1]
+USBD_MIDI_SOF           0x080034f1    0x6  Code  Lc  usbd_midi.o [1]
+USBD_MIDI_SetRxBuffer   0x08003589    0xc  Code  Gb  usbd_midi.o [1]
+USBD_MIDI_SetTxBuffer   0x08003575   0x14  Code  Gb  usbd_midi.o [1]
+USBD_MIDI_Setup         0x080033cf   0xc2  Code  Lc  usbd_midi.o [1]
+USBD_MIDI_TransmitPacket
+                        0x08003595   0x34  Code  Gb  usbd_midi.o [1]
+USBD_ParseSetupRequest  0x08006d69   0x28  Code  Gb  usbd_ctlreq.o [1]
+USBD_RegisterClass      0x0800304d   0x1a  Code  Gb  usbd_core.o [1]
+USBD_RunTestMode        0x08003075    0x6  Code  Gb  usbd_core.o [1]
+USBD_SetAddress         0x08006b41   0x60  Code  Lc  usbd_ctlreq.o [1]
+USBD_SetClassConfig     0x0800307b   0x2c  Code  Gb  usbd_core.o [1]
+USBD_SetConfig          0x08006ba1   0xda  Code  Lc  usbd_ctlreq.o [1]
+USBD_SetFeature         0x08006d09   0x26  Code  Lc  usbd_ctlreq.o [1]
+USBD_Start              0x08003067    0xe  Code  Gb  usbd_core.o [1]
+USBD_StdDevReq          0x0800679d   0x7c  Code  Gb  usbd_ctlreq.o [1]
+USBD_StdEPReq           0x08006865  0x170  Code  Gb  usbd_ctlreq.o [1]
+USBD_StdItfReq          0x08006819   0x4c  Code  Gb  usbd_ctlreq.o [1]
+USBD_StrDesc            0x200019ac  0x200  Data  Gb  usbd_desc.o [1]
+USBD_static_free        0x08006785    0x2  Code  Gb  usbd_conf.o [1]
+USBD_static_malloc      0x08006767    0x6  Code  Gb  usbd_conf.o [1]
+USB_ActivateEndpoint    0x0800840b  0x354  Code  Gb  stm32f1xx_ll_usb.o [1]
+USB_CoreInit            0x080083a9    0xa  Code  Gb  stm32f1xx_ll_usb.o [1]
+USB_DEVICE_init         0x08000e7d   0x34  Code  Gb  usb_device.o [1]
+USB_DeactivateEndpoint  0x0800875f  0x1d6  Code  Gb  stm32f1xx_ll_usb.o [1]
+USB_DevConnect          0x08008d55    0x6  Code  Gb  stm32f1xx_ll_usb.o [1]
+USB_DevDisconnect       0x08008d5b    0x6  Code  Gb  stm32f1xx_ll_usb.o [1]
+USB_DevInit             0x080083e9   0x22  Code  Gb  stm32f1xx_ll_usb.o [1]
+USB_DisableGlobalInt    0x080083cb   0x18  Code  Gb  stm32f1xx_ll_usb.o [1]
+USB_EP0_OutStart        0x08008d6d    0x6  Code  Gb  stm32f1xx_ll_usb.o [1]
+USB_EPClearStall        0x08008ca1   0xa2  Code  Gb  stm32f1xx_ll_usb.o [1]
+USB_EPSetStall          0x08008c23   0x7e  Code  Gb  stm32f1xx_ll_usb.o [1]
+USB_EPStartXfer         0x08008935  0x2ee  Code  Gb  stm32f1xx_ll_usb.o [1]
+USB_EnableGlobalInt     0x080083b3   0x18  Code  Gb  stm32f1xx_ll_usb.o [1]
+USB_LP_CAN1_RX0_IRQHandler
+                        0x08008ff9    0xa  Code  Gb  stm32f1xx_it.o [1]
+USB_ReadInterrupts      0x08008d61    0xc  Code  Gb  stm32f1xx_ll_usb.o [1]
+USB_ReadPMA             0x08008dbd   0x30  Code  Gb  stm32f1xx_ll_usb.o [1]
+USB_SetCurrentMode      0x080083e3    0x6  Code  Gb  stm32f1xx_ll_usb.o [1]
+USB_SetDevAddress       0x08008d43   0x12  Code  Gb  stm32f1xx_ll_usb.o [1]
+USB_WritePMA            0x08008d73   0x4a  Code  Gb  stm32f1xx_ll_usb.o [1]
+UsageFault_Handler      0x08008fe5    0x2  Code  Gb  stm32f1xx_it.o [1]
+UserRxBufferFS          0x20001c90   0x40  Data  Gb  usbd_midi_if.o [1]
+UserTxBufferFS          0x20001cd0   0x40  Data  Gb  usbd_midi_if.o [1]
+__aeabi_f2iz            0x08002d59         Code  Gb  FltToS32.o [4]
+__aeabi_fadd            0x08002e75         Code  Gb  FltAdd.o [4]
+__aeabi_fdiv            0x08002c5d         Code  Gb  FltDiv.o [4]
+__aeabi_fmul            0x08002d9d         Code  Gb  FltMul.o [4]
+__aeabi_fsub            0x08002ef9         Code  Gb  FltSub.o [4]
+__aeabi_i2f             0x08002c29         Code  Gb  I32ToFlt.o [4]
+__aeabi_memclr4         0x080027a1         Code  Gb  ABImemclr4.o [5]
+__aeabi_memset          0x08006ec1         Code  Gb  ABImemset.o [5]
+__aeabi_ui2f            0x08002c3d         Code  Gb  I32ToFlt.o [4]
+__cmain                 0x08009125         Code  Gb  cmain.o [5]
+__exit                  0x08009155         Code  Gb  XXexit.o [5]
+__iar_Memset            0x08006ec1         Code  Gb  ABImemset.o [5]
+__iar_Memset4_word      0x0800554d         Code  Gb  ABImemset48.o [5]
+__iar_Memset8_word      0x0800554d         Code  Gb  ABImemset48.o [5]
+__iar_Memset_word       0x08006ec9         Code  Gb  ABImemset.o [5]
+__iar_copy_init3        0x080090ad   0x2c  Code  Gb  copy_init3.o [5]
+__iar_data_init3        0x080090d9   0x28  Code  Gb  data_init.o [5]
+__iar_fadd              0x08002e85         Code  Gb  FltAdd.o [4]
+__iar_fsub              0x08002f09         Code  Gb  FltSub.o [4]
+__iar_fsubStart         0x08002f19         Code  Gb  FltSub.o [4]
+__iar_program_start     0x080091dd         Code  Gb  cstartup_M.o [5]
+__iar_ui2f              0x08002c41         Code  Gb  I32ToFlt.o [4]
+__iar_unaligned___aeabi_memcpy4
+                        0x08007999         Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy8
+                        0x08007999         Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_zero_init3        0x0800906d   0x40  Code  Gb  zero_init3.o [5]
+__low_level_init        0x0800913f    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  startup_stm32f103xb.o [1]
+_call_main              0x08009131         Code  Gb  cmain.o [5]
+_exit                   0x08009149         Code  Gb  cexit.o [5]
+_main                   0x0800913b         Code  Gb  cmain.o [5]
+accel_full_scale        0x20001f74    0x2  Data  Lc  mpu6050_ll_driver.o [1]
+adc1_init               0x08006f29  0x10c  Code  Gb  adc.o [1]
+adc2_init               0x08007035   0x8a  Code  Gb  adc.o [1]
+adc_current_measurement
+                        0x20001f28    0x8  Data  Lc  midi_baby.o [1]
+adc_dma_start           0x080004a7   0x12  Code  Lc  midi_baby.o [1]
+adc_task_heandle        0x20001f78    0x1  Data  Lc  midi_baby.o [1]
+bat_led_off             0x0800041b   0x10  Code  Gb  midi_baby.o [1]
+bat_led_on              0x0800040b   0x10  Code  Gb  midi_baby.o [1]
+bat_led_toggle          0x0800042b    0xe  Code  Gb  midi_baby.o [1]
+bat_sens_disable        0x08000495   0x12  Code  Gb  midi_baby.o [1]
+bat_sens_enable         0x08000483   0x12  Code  Gb  midi_baby.o [1]
+batary_discharge_process_heandle
+                        0x20000100    0x1  Data  Gb  midi_baby.o [1]
+batary_is_discharged    0x0800721f    0x8  Code  Gb  task.o [1]
+batary_measurement      0x08007333   0x2a  Code  Gb  task.o [1]
+batary_start_conversion
+                        0x0800735d    0xa  Code  Lc  task.o [1]
+ble_chip_reset          0x08000439   0x18  Code  Gb  midi_baby.o [1]
+ble_chip_reset_pin_to_high
+                        0x08000461   0x10  Code  Gb  midi_baby.o [1]
+ble_chip_reset_pin_to_low
+                        0x08000451   0x10  Code  Gb  midi_baby.o [1]
+bounce_contact_filter   0x080075e9   0xb8  Code  Gb  keyboard.o [1]
+byte_from_cc2541        0x20001f7a    0x1  Data  Gb  midi_ble.o [1]
+charger_connect_detect  0x08007227   0xf0  Code  Gb  task.o [1]
+check_change_state      0x080076c1   0x6a  Code  Gb  keyboard.o [1]
+common_flags            0x20001f40    0x4  Data  Gb  main.o [1]
+create_process          0x080010a9   0x9a  Code  Gb  software_timer.o [1]
+current_midi_event      0x20001f44    0x4  Data  Gb  main.o [1]
+delete_process          0x08001143   0x1a  Code  Gb  software_timer.o [1]
+exit                    0x08009143    0x4  Code  Gb  exit.o [3]
+get_button_state        0x080076a1   0x10  Code  Gb  keyboard.o [1]
+get_event_from_midi_queue
+                        0x080062a9   0x30  Code  Gb  queue.o [1]
+get_old_button_state    0x080076b1   0x10  Code  Gb  keyboard.o [1]
+get_pwm_long_silent_time
+                        0x080074a7    0x6  Code  Gb  usr_led_blnk.o [1]
+get_pwm_short_silent_time
+                        0x080074ad    0x6  Code  Gb  usr_led_blnk.o [1]
+get_pwm_step            0x080074b9    0x6  Code  Gb  usr_led_blnk.o [1]
+gyro_full_scale         0x20001f76    0x2  Data  Lc  mpu6050_ll_driver.o [1]
+hUsbDeviceFS            0x20001788  0x224  Data  Gb  usb_device.o [1]
+hadc1                   0x20001e6c   0x30  Data  Gb  adc.o [1]
+hadc2                   0x20001e9c   0x30  Data  Gb  adc.o [1]
+hardware_crc_init       0x08001001   0x28  Code  Gb  bootloader.o [1]
+hardware_flash_init     0x08001035    0x2  Code  Gb  bootloader.o [1]
+hcrc                    0x20001f20    0x8  Data  Gb  bootloader.o [1]
+hdma_adc1               0x20001dc4   0x38  Data  Gb  adc.o [1]
+hdma_i2c1_rx            0x20001e34   0x38  Data  Gb  mpu6050_ll_driver.o [1]
+hdma_i2c1_tx            0x20001dfc   0x38  Data  Gb  mpu6050_ll_driver.o [1]
+heart_led_off           0x080003db   0x10  Code  Gb  midi_baby.o [1]
+hi2c1                   0x20001d4c   0x3c  Data  Gb  mpu6050_ll_driver.o [1]
+hpcd_USB_FS             0x200010c8  0x420  Data  Gb  usbd_conf.o [1]
+htim4                   0x20001d88   0x3c  Data  Gb  tim.o [1]
+huart3                  0x20001c50   0x40  Data  Gb  midi_ble.o [1]
+input_button_data       0x20001efc   0x14  Data  Gb  keyboard.o [1]
+is_midi_queue_empty     0x080061af   0x18  Code  Gb  queue.o [1]
+is_time_for_read_motion_elapsed
+                        0x08007317    0xe  Code  Gb  task.o [1]
+keyboard_flags          0x20001f38    0x4  Data  Gb  keyboard.o [1]
+keyboard_scan           0x08004309  0x152  Code  Gb  main.o [1]
+long_silent_time        0x200000fa    0x2  Data  Lc  usr_led_blnk.o [1]
+main                    0x08003ee5  0x1e8  Code  Gb  main.o [1]
+midi_baby_accel_x_changed
+                        0x08000dcf   0x1a  Code  Gb  midi_baby.o [1]
+midi_baby_accel_y_changed
+                        0x08000de9   0x1a  Code  Gb  midi_baby.o [1]
+midi_baby_analyze_new_adc_data
+                        0x080004e9  0x3e0  Code  Gb  midi_baby.o [1]
+midi_baby_analyze_new_batary_data
+                        0x080008c9  0x174  Code  Gb  midi_baby.o [1]
+midi_baby_analyze_new_motion_data
+                        0x08000a4d  0x2be  Code  Gb  midi_baby.o [1]
+midi_baby_device        0x20001d10   0x3c  Data  Gb  main.o [1]
+midi_baby_init          0x080000ed  0x1d6  Code  Gb  midi_baby.o [1]
+midi_baby_loop_but_changed
+                        0x08000d89   0x46  Code  Gb  midi_baby.o [1]
+midi_baby_play_but_changed
+                        0x08000d4d   0x14  Code  Gb  midi_baby.o [1]
+midi_baby_rec_but_changed
+                        0x08000d75   0x14  Code  Gb  midi_baby.o [1]
+midi_baby_rewind_but_changed
+                        0x08000d61   0x14  Code  Gb  midi_baby.o [1]
+midi_baby_rotary_0_changed
+                        0x08000d0b   0x14  Code  Gb  midi_baby.o [1]
+midi_baby_rotary_1_changed
+                        0x08000d1f   0x14  Code  Gb  midi_baby.o [1]
+midi_baby_start_adc_conversion
+                        0x080004b9   0x30  Code  Gb  midi_baby.o [1]
+midi_baby_start_read_motion
+                        0x08000a3d   0x10  Code  Gb  midi_baby.o [1]
+midi_baby_stop_but_changed
+                        0x08000d33   0x14  Code  Gb  midi_baby.o [1]
+midi_baby_transmit_event
+                        0x080002c3   0xba  Code  Gb  midi_baby.o [1]
+midi_ble_hardware_init  0x08000ecd   0x46  Code  Gb  midi_ble.o [1]
+midi_ble_ll_transmit    0x08000f7d   0x24  Code  Gb  midi_ble.o [1]
+midi_ble_parce_data     0x08000fa1   0x44  Code  Gb  midi_ble.o [1]
+midi_ble_timestamp_inc  0x08000eb1   0x1c  Code  Gb  midi_ble.o [1]
+midi_control_change     0x08002fe1   0x30  Code  Gb  midi.o [1]
+midi_event_queue        0x20000508  0xbc0  Data  Gb  main.o [1]
+midi_flags              0x20001f3c    0x4  Data  Gb  main.o [1]
+midi_flags_heandler     0x08004233   0xd6  Code  Gb  main.o [1]
+midi_queue_len          0x080061a9    0x6  Code  Gb  queue.o [1]
+midi_timestamp          0x20001f72    0x2  Data  Gb  midi_ble.o [1]
+motion_button_detect    0x08007131   0xa4  Code  Gb  task.o [1]
+motion_led_off          0x080003fb   0x10  Code  Gb  midi_baby.o [1]
+motion_led_on           0x080003eb   0x10  Code  Gb  midi_baby.o [1]
+motion_mpu6050_data     0x20001f10   0x10  Data  Lc  midi_baby.o [1]
+mpu6050_accel_set_full_scale
+                        0x08002893   0x30  Code  Gb  mpu6050_ll_driver.o [1]
+mpu6050_define_full_scale
+                        0x08002bd9   0x10  Code  Lc  mpu6050_ll_driver.o [1]
+mpu6050_gyro_set_full_scale
+                        0x08002863   0x30  Code  Gb  mpu6050_ll_driver.o [1]
+mpu6050_init            0x080027a9   0x96  Code  Gb  mpu6050_ll_driver.o [1]
+mpu6050_ll_dma_hardware_init
+                        0x080029ef  0x156  Code  Gb  mpu6050_ll_driver.o [1]
+mpu6050_ll_dma_read_nbytes
+                        0x08002b45   0x2a  Code  Gb  mpu6050_ll_driver.o [1]
+mpu6050_ll_hardware_init
+                        0x080028c3   0x62  Code  Gb  mpu6050_ll_driver.o [1]
+mpu6050_ll_read_byte    0x080029bf   0x30  Code  Gb  mpu6050_ll_driver.o [1]
+mpu6050_ll_write_data   0x080029a5   0x1a  Code  Gb  mpu6050_ll_driver.o [1]
+mpu6050_reset           0x0800283f   0x24  Code  Gb  mpu6050_ll_driver.o [1]
+mpu6050_set_ext_sync    0x08002ba3   0x36  Code  Lc  mpu6050_ll_driver.o [1]
+mpu6050_set_lowpass_filter
+                        0x08002b6f   0x34  Code  Lc  mpu6050_ll_driver.o [1]
+old_adc_data            0x20001f48    0x4  Data  Lc  midi_baby.o [1]
+power_supply_detect     0x080070e5   0x4c  Code  Gb  task.o [1]
+power_supply_disable    0x0800037d   0x2e  Code  Gb  midi_baby.o [1]
+power_supply_enable     0x080003ab   0x30  Code  Gb  midi_baby.o [1]
+process_handler         0x0800115d  0x13a  Code  Gb  software_timer.o [1]
+put_event_to_midi_queue
+                        0x080061c7   0xde  Code  Gb  queue.o [1]
+pwm_calculate_difference
+                        0x080074bf   0x8c  Code  Gb  usr_led_blnk.o [1]
+pwm_long_silent_set_val
+                        0x080074a1    0x6  Code  Gb  usr_led_blnk.o [1]
+pwm_step                0x200000f8    0x2  Data  Lc  usr_led_blnk.o [1]
+pwm_step_set_val        0x080074b3    0x6  Code  Gb  usr_led_blnk.o [1]
+scan_keyboard           0x080075a5   0x44  Code  Gb  keyboard.o [1]
+sequence_reading        0x08007565   0x40  Code  Gb  keyboard.o [1]
+short_silent_time       0x200000fc    0x2  Data  Lc  usr_led_blnk.o [1]
+smooth_data             0x20001f4c    0x4  Data  Lc  midi_baby.o [1]
+soft_process            0x200014e8  0x2a0  Data  Lc  software_timer.o [1]
+stop_all_processes      0x08001297   0x4a  Code  Gb  software_timer.o [1]
+system_tasks_init       0x08007367   0xe0  Code  Gb  task.o [1]
+temp_mode               0x20001ecc   0x18  Data  Lc  software_timer.o [1]
+temp_state              0x20001ee4   0x18  Data  Lc  software_timer.o [1]
+tim4_pwm_init           0x0800161d   0x8e  Code  Gb  tim.o [1]
+usb_connect_detect      0x080071d5   0x4a  Code  Gb  task.o [1]
+usb_pin_enable          0x08000471   0x12  Code  Gb  midi_baby.o [1]
+uwTick                  0x20001f60    0x4  Data  Lc  stm32f1xx_hal.o [1]
+wait_for_adc_average_first_data
+                        0x08007325    0xe  Code  Gb  task.o [1]
+
+
+[1] = C:\Users\Alexander Anisimov\Documents\PRIBORE ELECTRONICS\MIDI Project\MDP101 Baby\EWARM\MDP101 Baby\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tl.a
+[5] = rt7M_tl.a
+
+  37 086 bytes of readonly  code memory
+     414 bytes of readonly  data memory
+   8 057 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
